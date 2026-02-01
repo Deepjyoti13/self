@@ -914,9 +914,9 @@ document.querySelectorAll('.t-input').forEach(input => {
   });
   input.addEventListener('blur', () => { cursor.style.display='none'; });
 });
+// show the blinking cursor visually, but don't .focus() — that would scroll the page down
 setTimeout(() => {
   document.getElementById('cursorName').style.display='inline-block';
-  document.getElementById('inputName').focus();
 }, 1700);
 
 // ── Tab / Enter nav ──
